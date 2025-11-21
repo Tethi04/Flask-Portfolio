@@ -1,0 +1,83 @@
+{% extends "base.html" %} {% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">{{ personal_info.name }}</span></h1>
+            <p class="hero-subtitle">Computer Science Student & Web Developer</p>
+            <p class="hero-description">
+                Passionate about creating innovative web solutions and exploring new technologies. Currently pursuing Bachelor's in Computer Science with hands-on experience in full-stack development and problem-solving.
+            </p>
+            <div class="hero-contact">
+                <p><i class="fas fa-envelope"></i> {{ personal_info.email }}</p>
+                <p><i class="fas fa-phone"></i> {{ personal_info.phone }}</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="{{ url_for('projects_page') }}" class="btn btn-primary">View My Projects</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills-section">
+    <div class="container">
+        <h2>Core Technical Skills</h2>
+        <div class="skills-grid">
+            {% for category, skill_list in skills.items() %}
+            <div class="skill-category">
+                <h3>{{ category }}</h3>
+                <div class="skill-items">
+                    {% for skill in skill_list %}
+                    <span class="skill-item">{{ skill }}</span> {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="education-section">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="education-list">
+            {% for edu in education %}
+            <div class="education-item">
+                <h3>{{ edu.degree }}</h3>
+                <p class="institution">{{ edu.institution }}</p>
+                <p class="period">{{ edu.period }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="certifications-section">
+    <div class="container">
+        <h2>Certifications & Training</h2>
+        <div class="certifications-list">
+            {% for cert in certifications %}
+            <div class="certification-item">
+                <h3>{{ cert.name }}</h3>
+                <p class="institution">{{ cert.institution }}</p>
+                <p class="period">{{ cert.period }}</p>
+                <p class="description">{{ cert.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="languages-section">
+    <div class="container">
+        <h2>Languages</h2>
+        <div class="languages-grid">
+            {% for lang in languages %}
+            <div class="language-item">
+                <span class="language-name">{{ lang.name }}</span>
+                <span class="language-proficiency">{{ lang.proficiency }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -19,11 +19,12 @@ A personal portfolio website built with Flask showcasing my skills, projects, an
 - JavaScript
 - Font Awesome Icons
 
-## Installation
+## Installation##
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Tethi04/flask-portfolio.git
+git clone [https://github.com/Tethi04/flask-portfolio.git]
+[]
 cd flask-portfolio
 
 2. Create a virtual environment:
@@ -64,6 +65,3 @@ MIT License
 4. Run: `python app.py`
 
 5. Visit `http://localhost:5000` in your browser
-
-link [https://github.com/Tethi04/flask-portfolio/tree/main]
-[]

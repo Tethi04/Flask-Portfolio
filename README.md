@@ -4,7 +4,7 @@ A personal portfolio website built with Flask showcasing my skills, projects, an
 # portfolio link
 https://tethi-portfolio-17yk.onrender.com 
  
- or 
+                    or 
  
  https://tethi-portfolio.onrender.com
 
@@ -74,6 +74,7 @@ MIT License
 4. Run: `python app.py`
 
 5. Visit `http://localhost:5000` in your browser
+
 
 
 

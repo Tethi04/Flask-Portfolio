@@ -12,6 +12,38 @@ personal_info = {
     'linkedin': 'https://www.linkedin.com/in/tethi-biswas-555792358'
 }
 
+
+# Technical skills
+skills = {
+    'Languages': ['Python', 'C++', 'C', 'Java', 'JavaScript', 'HTML', 'CSS', 'TypeScript'],
+    'Tools & Platforms': ['Git & GitHub', 'VS Code', 'Flask', 'Windows/Linux OS'],
+    'Concepts': ['Data Structures & Algorithms (DSA)', 'Object-Oriented Programming (OOP)', 'Computer Networking']
+}
+
+# Education
+education = [
+    {
+        'degree': 'Bachelor of Science in Computer Science',
+        'institution': 'Siliguri College, Siliguri',
+        'period': '2023 â€“ Present (Expected: Aug 2027)'
+    },
+    {
+        'degree': 'Higher Secondary (XII), WBCHSE',
+        'institution': 'Sunitibala Sadar Girls\' High School',
+        'period': '71.8% | 2023'
+    }
+]
+
+# Certifications
+certifications = [
+    {
+        'name': 'Diploma in Information Technology',
+        'institution': 'Jawaharlal Nehru Youth Computer Centre (JNYCC), Jalpaiguri, West Bengal',
+        'period': 'October 2021 - Sept 2022',
+        'description': 'Completed "A" Grade training focused on Operating Systems, Web Technologies, and programming logic.'
+    }
+]
+
 # Simple projects data (minimal to test)
 projects = [
       {
@@ -56,12 +88,15 @@ projects = [
     }
 ]
 
-# Simple skills data
-skills = {
-    'Languages': ['Python', 'JavaScript', 'HTML', 'CSS', 'TypeScript'],
-    'Tools': ['Git', 'VS Code', 'Flask']
-}
+# Languages
+languages = [
+    {'name': 'Bengali', 'proficiency': 'Native'},
+    {'name': 'Hindi', 'proficiency': 'Fluent'},
+    {'name': 'English', 'proficiency': 'Advanced Working Proficiency'},
+    {'name': 'Korean', 'proficiency': 'Beginner/Conversational'}
+]
 
+@app.route('/')
 @app.route('/')
 def index():
     return render_template('index.html', 
@@ -87,4 +122,5 @@ def contact():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)
+
 

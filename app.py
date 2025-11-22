@@ -12,7 +12,6 @@ personal_info = {
     'linkedin': 'https://www.linkedin.com/in/tethi-biswas-555792358'
 }
 
-
 # Technical skills
 skills = {
     'Languages': ['Python', 'C++', 'C', 'Java', 'JavaScript', 'HTML', 'CSS', 'TypeScript'],
@@ -25,7 +24,7 @@ education = [
     {
         'degree': 'Bachelor of Science in Computer Science',
         'institution': 'Siliguri College, Siliguri',
-        'period': '2023 â€“ Present (Expected: Aug 2027)'
+        'period': '2023 – Present (Expected: Aug 2027)'
     },
     {
         'degree': 'Higher Secondary (XII), WBCHSE',
@@ -44,9 +43,9 @@ certifications = [
     }
 ]
 
-# Simple projects data (minimal to test)
+# Projects
 projects = [
-      {
+    {
         'title': 'Flask Portfolio Website',
         'description': 'Personal Portfolio & Web Application',
         'details': 'Developed and deployed a responsive personal portfolio using Python Flask framework. Implemented dynamic templating with Jinja2 and custom CSS styling. Features contact form with backend processing, project showcase, and fully responsive design.',
@@ -97,11 +96,13 @@ languages = [
 ]
 
 @app.route('/')
-@app.route('/')
 def index():
     return render_template('index.html', 
                          personal_info=personal_info,
-                         skills=skills)
+                         skills=skills,
+                         education=education,
+                         certifications=certifications,
+                         languages=languages)
 
 @app.route('/projects')
 def projects_page():
@@ -122,5 +123,3 @@ def contact():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)
-
-

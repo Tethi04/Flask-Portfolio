@@ -12,11 +12,12 @@ personal_info = {
     'linkedin': 'https://www.linkedin.com/in/tethi-biswas-555792358'
 }
 
-# Technical skills
+# Technical skills - UPDATED
 skills = {
     'Languages': ['Python', 'C++', 'C', 'Java', 'JavaScript', 'HTML', 'CSS', 'TypeScript'],
-    'Tools & Platforms': ['Git & GitHub', 'VS Code', 'Flask', 'Windows/Linux OS'],
-    'Concepts': ['Data Structures & Algorithms (DSA)', 'Object-Oriented Programming (OOP)', 'Computer Networking']
+    'Frameworks & Libraries': ['Flask', 'Pillow', 'Jinja2'],
+    'Tools & Platforms': ['Git & GitHub', 'VS Code', 'Render', 'Windows/Linux OS'],
+    'Concepts': ['Data Structures & Algorithms (DSA)', 'Object-Oriented Programming (OOP)', 'Computer Networking', 'Image Processing']
 }
 
 # Education
@@ -84,6 +85,14 @@ projects = [
         'technologies': ['HTML', 'CSS', 'CSS Animations', 'Responsive Design'],
         'live_demo': 'https://animated-birthday-greeting.onrender.com',
         'github': 'https://github.com/Tethi04/Animated-Birthday-Greeting'
+    },
+    {
+        'title': 'Image Resizer Tool',
+        'description': 'Web-based image processing application',
+        'details': 'Developed a full-stack web application for resizing and converting images. Features single and batch image processing, format conversion, and responsive design. Built with Python Flask and Pillow library.',
+        'technologies': ['Python', 'Flask', 'Pillow', 'HTML5', 'CSS3', 'JavaScript'],
+        'live_demo': 'https://image-resizer-tool-production.up.railway.app',
+        'github': 'https://github.com/Tethi04/image-resizer-tool'
     }
 ]
 
@@ -123,3 +132,4 @@ def contact():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)
+

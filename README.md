@@ -8,6 +8,11 @@ https://tethi-portfolio-17yk.onrender.com
  
  https://tethi-portfolio.onrender.com
 
+ ##QR code:
+ you can scan the QR code 👇🏻 to open my portfolio too.
+ 
+ <img src="https://github.com/Tethi04/flask-portfolio/blob/main/Portfolio.png" width="200" />
+
 ## Features
 
 - Responsive design
@@ -34,9 +39,9 @@ https://tethi-portfolio-17yk.onrender.com
 [https://github.com/Tethi04/flask-portfolio]
 
 cd flask-portfolio
-<img src="https://github.com/Tethi04/flask-portfolio/blob/main/Portfolio.png" width="200" />
 
 ```bash git clone
+
 2. Create a virtual environment:
       python -m venv venv
       source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -75,6 +80,7 @@ MIT License
 4. Run: `python app.py`
 
 5. Visit `http://localhost:5000` in your browser
+
 
 
 
